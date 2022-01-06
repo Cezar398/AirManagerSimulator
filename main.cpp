@@ -10,7 +10,25 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Airport Manager Simulator - Catarau Cezar-Iulian");
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Airport Manager Simulator - Catarau Cezar-Iulian", sf::Style::Close | sf::Style::Titlebar);
+
+    window.setVerticalSyncEnabled(true);
+
+    sf::Font font_roboto;
+
+    font_roboto.loadFromFile("Roboto-Regular.ttf");
+
+
+    sf::Text headerTitle;
+
+    sf::FloatRect headerTitleRect;
+    headerTitle.setString("Airport Control Panel");
+    headerTitle.setCharacterSize(20);
+    headerTitle.setFont(font_roboto);
+    headerTitle.setColor(sf::Color::Black);
+    headerTitleRect = headerTitle.getLocalBounds();
+    headerTitle.setOrigin(headerTitleRect.left + headerTitleRect.width/2, 0);
+    headerTitle.setPosition(sf::Vector2f(400, 0));
 
     while(window.isOpen())
     {
@@ -22,6 +40,8 @@ int main()
                 window.close();
         }
 
-
+        window.clear(sf::Color::White);
+        window.draw(headerTitle);
+        window.display();
     }
 }
