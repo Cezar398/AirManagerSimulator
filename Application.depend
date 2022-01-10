@@ -1,7 +1,16 @@
 # depslib dependency file v1.0
-1641476089 source:e:\cbp\airmanagersimulator\main.cpp
+1641852811 source:e:\cbp\airmanagersimulator\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
+	<SFML/System.hpp>
 	<bits/stdc++.h>
 	<detector.hpp>
+	"fps.h"
+
+1641852494 source:e:\cbp\airmanagersimulator\fps.cpp
+	<SFML/Window.hpp>
+	<bits/stdc++.h>
+	"fps.h"
+
+1641852823 e:\cbp\airmanagersimulator\fps.h
 
