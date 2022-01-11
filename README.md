@@ -1,7 +1,7 @@
 ## Proiect PCLP 3 </>
 ### Realizat de Catarau Cezar-Iulian, AIA, 3221B
 
- - [x] Window Test
+ - [x] Windows Test
  
  - [ ] Linux Test
  
